@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Himanshu Gusain</title>
-		<link>http://localhost:1313/</link>
-		<description>Recent content on Himanshu Gusain</description>
+		<title>Posts on Himanshu Gusain</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on Himanshu Gusain</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,7 +12,7 @@
 		
 			<lastBuildDate>Sat, 05 Aug 2023 16:58:58 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Little bit on networks</title>
 				<link>http://localhost:1313/posts/little-bit-on-networks/</link>
@@ -33,13 +33,6 @@
 				<pubDate>Mon, 12 Dec 2022 19:44:55 +0530</pubDate>
 				<guid>http://localhost:1313/posts/simpler-regex-guide/</guid>
 				<description>&lt;p&gt;Did you ever find yourself repeating keystrokes when editing a long list of words, for example you want to replace that semicolon &lt;code&gt;;&lt;/code&gt; with a colon &lt;code&gt;:&lt;/code&gt;&#xA;And you think there should be a cooler way to do that OR you know the way but you never remember the old fabled regex when needed.&#xA;Here is a list of simple regex example that you can easily tweak to get things done faster.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>About</title>
-				<link>http://localhost:1313/about/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/avatar.png&#34; alt=&#34;Himanshu Gusain&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;himanshu-gusain&#34;&gt;Himanshu Gusain&lt;/h2&gt;&#xA;&lt;p&gt;Senior Engineer, Site Reliability&lt;/p&gt;&#xA;&lt;h2 id=&#34;good-reads&#34;&gt;Good Reads&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://xyproblem.info/&#34;&gt;XY Problem&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://mtlynch.io/code-review-love/&#34;&gt;Make Reviewer Fall in Love&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://signalvnoise.com/posts/3124-give-it-five-minutes&#34;&gt;Give it five minutes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Law_of_triviality&#34;&gt;Law of Triviality&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.hillelwayne.com/post/are-we-really-engineers/&#34;&gt;ARE WE REALLY ENGINEERS?&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>
 </rss>

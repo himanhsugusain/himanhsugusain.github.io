@@ -1,7 +1,8 @@
 baseURL = 'https://himanhsugusain.github.io/'
 locale = 'en-us'
-title = 'Slowbot Systems and Software'
+title = 'Himanshu Gusain'
 theme = 'hugo-theme'
+publishDir = 'docs'
 
 [menus]
   [[menus.main]]
@@ -13,6 +14,16 @@ theme = 'hugo-theme'
     name = 'Posts'
     pageRef = '/posts'
     weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 40
 
 [module]
   [module.hugoVersion]

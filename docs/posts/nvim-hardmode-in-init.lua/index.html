@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>nvim hardmode in init.lua | Himanshu Gusain</title>
+
+      <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Himanshu Gusain</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/tags/">Tags</a>
+    </li>
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+  <h1>nvim hardmode in init.lua</h1>
+
+  
+    
+    
+    <time datetime="2023-08-05T16:02:11&#43;00:00">August 5, 2023</time>
+  
+
+  <p>In my quest to learn vim, I stumbled upon a very excellent advise to disable arrow keys and force yourself to use only h,j,k,l movements. Being a former counter-strike enthusiast I know that this method works as I have forced me to learn better keybinds earlier too.</p>
+<p>And since I am also looking into how to configure nvim properly whilest understanding what I put into my configurations, I decided not to blindly add <a href="https://github.com/dusans/vim-hardmode">vim-hardmode</a> plugin.</p>
+<p>First I though I would just copy over the keymaps directive to my newly created <code>init.lua</code> config, but the plugin had the binds in native vim directives. So to keep up with my resolve to use <code>lua</code> to configure my nvim, I had to rewrite the instruction in <code>lua</code> ( sort off ).</p>
+<p>Thankfully <a href="https://neovim.io/doc/user/lua-guide.html">Neovim lua user guide</a> is quite enought to do the conversions. Here is the result of the conversion.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- Bindings to enable hardmode on vim, break habits.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- https://github.com/dusans/vim-hardmode ported to lua.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- TODO: Disable h,j,k,l in normal and visual mode ??</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- START HARDMODE</span>
+</span></span><span style="display:flex;"><span>vim.g.hardmodemsg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;VIM: hard Mode [ &#39; :call EasyMode()&#39; to exit]&#34;</span>
+</span></span><span style="display:flex;"><span>vim.g.hardmode_on <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">HardMode</span>()
+</span></span><span style="display:flex;"><span>	vim.opt.backspace<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	vim.keymap.set({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Left&gt;&#39;</span>, <span style="color:#e6db74">&#34;&lt;Esc&gt;:echo g:hardmodemsg&lt;CR&gt;&#34;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.set({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Right&gt;&#39;</span>, <span style="color:#e6db74">&#34;&lt;Esc&gt;:echo g:hardmodemsg&lt;CR&gt;&#34;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.set({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Up&gt;&#39;</span>, <span style="color:#e6db74">&#34;&lt;Esc&gt;:echo g:hardmodemsg&lt;CR&gt;&#34;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.set({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Down&gt;&#39;</span>, <span style="color:#e6db74">&#34;&lt;Esc&gt;:echo g:hardmodemsg&lt;CR&gt;&#34;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.set({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;PageUp&gt;&#39;</span>, <span style="color:#e6db74">&#34;&lt;Esc&gt;:echo g:hardmodemsg&lt;CR&gt;&#34;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.set({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;PageDown&gt;&#39;</span>, <span style="color:#e6db74">&#34;&lt;Esc&gt;:echo g:hardmodemsg&lt;CR&gt;&#34;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.g.hardmode_on <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	print(vim.g.hardmodemsg)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">EasyMode</span>()
+</span></span><span style="display:flex;"><span>	vim.opt.backspace<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;indent,eol,start&#34;</span>
+</span></span><span style="display:flex;"><span>	vim.keymap.del({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Left&gt;&#39;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.del({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Right&gt;&#39;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.del({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Up&gt;&#39;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.del({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;Down&gt;&#39;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.del({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;PageUp&gt;&#39;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.keymap.del({<span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;v&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>}, <span style="color:#e6db74">&#39;&lt;PageDown&gt;&#39;</span>, { buffer<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>	vim.g.hardmode_on <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;You are weak...&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ToggleMode</span>()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (vim.g.hardmode_on<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		EasyMode()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>		HardMode()
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>vim.api.nvim_create_user_command(
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;ToggleMode&#39;</span>,
+</span></span><span style="display:flex;"><span>  ToggleMode,
+</span></span><span style="display:flex;"><span>  { nargs<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>}
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div><p>Someone who have looked into the hardmode config for vim, might find that the directive are compact comparitively due the fact that I can set for <code>normal</code>, <code>visual</code> and <code>insert</code> mode simultaneously in a single line.</p>
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/nvim/">Nvim</a></li>
+        <li><a href="/tags/vim/">Vim</a></li>
+        <li><a href="/tags/lua/">Lua</a></li>
+        <li><a href="/tags/.dotfile/">.Dotfile</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2026. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
