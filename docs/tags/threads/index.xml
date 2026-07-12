@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Threads on Himanshu Gusain</title>
+		<title>Threads on Systems, Software and Slowbot</title>
 		<link>http://localhost:1313/tags/threads/</link>
-		<description>Recent content in Threads on Himanshu Gusain</description>
+		<description>Recent content in Threads on Systems, Software and Slowbot</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -14,11 +14,11 @@
 		
 			<atom:link href="http://localhost:1313/tags/threads/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Threads and co-routines</title>
+				<title>From 800s to 100s with half memory</title>
 				<link>http://localhost:1313/posts/thread_and_coroutines/</link>
 				<pubDate>Sun, 12 Jul 2026 10:03:32 +0530</pubDate>
 				<guid>http://localhost:1313/posts/thread_and_coroutines/</guid>
-				<description>&lt;h3 id=&#34;its-running-very-slow&#34;&gt;Its running very slow&lt;/h3&gt;</description>
+				<description>&lt;p&gt;First of all if your simple api calls are taking 100s, that is bad. But given we started from 800s with should be appreciated.All that with minimum effort.&lt;/p&gt;&#xA;&lt;p&gt;Bit of context, we use simple api calls to make config change across more than 1000 deployments, with each call we fetch current config modify it and put it back. For 1 or 2 deployment this works fine for day to day changes. But when you have to it everywhere and that too in the middle of outage , this becomes a nagging problem.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

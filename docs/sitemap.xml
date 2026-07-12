@@ -2,50 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://himanhsugusain.github.io/tags/cpp/</loc>
+    <loc>http://localhost:1313/tags/coroutines/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/thread_and_coroutines/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/perf/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/threads/</loc>
+    <lastmod>2026-07-12T10:03:32+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cpp/</loc>
     <lastmod>2023-08-05T16:58:58+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/</loc>
+    <loc>http://localhost:1313/posts/little-bit-on-networks/</loc>
     <lastmod>2023-08-05T16:58:58+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/posts/little-bit-on-networks/</loc>
+    <loc>http://localhost:1313/tags/networks/</loc>
     <lastmod>2023-08-05T16:58:58+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/tags/networks/</loc>
-    <lastmod>2023-08-05T16:58:58+00:00</lastmod>
-  </url><url>
-    <loc>https://himanhsugusain.github.io/posts/</loc>
-    <lastmod>2023-08-05T16:58:58+00:00</lastmod>
-  </url><url>
-    <loc>https://himanhsugusain.github.io/tags/</loc>
-    <lastmod>2023-08-05T16:58:58+00:00</lastmod>
-  </url><url>
-    <loc>https://himanhsugusain.github.io/tags/.dotfile/</loc>
+    <loc>http://localhost:1313/tags/.dotfile/</loc>
     <lastmod>2023-08-05T16:02:11+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/tags/lua/</loc>
+    <loc>http://localhost:1313/tags/lua/</loc>
     <lastmod>2023-08-05T16:02:11+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/tags/nvim/</loc>
+    <loc>http://localhost:1313/tags/nvim/</loc>
     <lastmod>2023-08-05T16:02:11+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/posts/nvim-hardmode-in-init.lua/</loc>
+    <loc>http://localhost:1313/posts/nvim-hardmode-in-init.lua/</loc>
     <lastmod>2023-08-05T16:02:11+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/tags/vim/</loc>
+    <loc>http://localhost:1313/tags/vim/</loc>
     <lastmod>2023-08-05T16:02:11+00:00</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/tags/ide/</loc>
+    <loc>http://localhost:1313/tags/ide/</loc>
     <lastmod>2022-12-12T19:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/tags/regex/</loc>
+    <loc>http://localhost:1313/tags/regex/</loc>
     <lastmod>2022-12-12T19:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/posts/simpler-regex-guide/</loc>
+    <loc>http://localhost:1313/posts/simpler-regex-guide/</loc>
     <lastmod>2022-12-12T19:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://himanhsugusain.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://himanhsugusain.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

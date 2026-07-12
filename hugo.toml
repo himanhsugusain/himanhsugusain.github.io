@@ -1,6 +1,6 @@
 baseURL = 'https://himanhsugusain.github.io/'
 locale = 'en-us'
-title = 'Himanshu Gusain'
+title = 'Systems, Software and Slowbot'
 theme = 'hugo-theme'
 publishDir = 'docs'
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Lua on Himanshu Gusain</title>
-		<link>https://himanhsugusain.github.io/tags/lua/</link>
-		<description>Recent content in Lua on Himanshu Gusain</description>
+		<title>Lua on Systems, Software and Slowbot</title>
+		<link>http://localhost:1313/tags/lua/</link>
+		<description>Recent content in Lua on Systems, Software and Slowbot</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Sat, 05 Aug 2023 16:02:11 +0000</lastBuildDate>
 		
-			<atom:link href="https://himanhsugusain.github.io/tags/lua/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/lua/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>nvim hardmode in init.lua</title>
-				<link>https://himanhsugusain.github.io/posts/nvim-hardmode-in-init.lua/</link>
+				<link>http://localhost:1313/posts/nvim-hardmode-in-init.lua/</link>
 				<pubDate>Sat, 05 Aug 2023 16:02:11 +0000</pubDate>
-				<guid>https://himanhsugusain.github.io/posts/nvim-hardmode-in-init.lua/</guid>
+				<guid>http://localhost:1313/posts/nvim-hardmode-in-init.lua/</guid>
 				<description>&lt;p&gt;In my quest to learn vim, I stumbled upon a very excellent advise to disable arrow keys and force yourself to use only h,j,k,l movements. Being a former counter-strike enthusiast I know that this method works as I have forced me to learn better keybinds earlier too.&lt;/p&gt;&#xA;&lt;p&gt;And since I am also looking into how to configure nvim properly whilest understanding what I put into my configurations, I decided not to blindly add &lt;a href=&#34;https://github.com/dusans/vim-hardmode&#34;&gt;vim-hardmode&lt;/a&gt; plugin.&lt;/p&gt;</description>
 			</item>
 	</channel>

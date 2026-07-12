@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Networks on Himanshu Gusain</title>
-		<link>https://himanhsugusain.github.io/tags/networks/</link>
-		<description>Recent content in Networks on Himanshu Gusain</description>
+		<title>Networks on Systems, Software and Slowbot</title>
+		<link>http://localhost:1313/tags/networks/</link>
+		<description>Recent content in Networks on Systems, Software and Slowbot</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Sat, 05 Aug 2023 16:58:58 +0000</lastBuildDate>
 		
-			<atom:link href="https://himanhsugusain.github.io/tags/networks/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/networks/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Little bit on networks</title>
-				<link>https://himanhsugusain.github.io/posts/little-bit-on-networks/</link>
+				<link>http://localhost:1313/posts/little-bit-on-networks/</link>
 				<pubDate>Sat, 05 Aug 2023 16:58:58 +0000</pubDate>
-				<guid>https://himanhsugusain.github.io/posts/little-bit-on-networks/</guid>
+				<guid>http://localhost:1313/posts/little-bit-on-networks/</guid>
 				<description>&lt;p&gt;Simple c code to do a dns lookup.&lt;/p&gt;</description>
 			</item>
 	</channel>
